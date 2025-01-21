@@ -13,6 +13,8 @@
     "@types/node": "^22.10.7"
   },
   "dependencies": {
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "moment-timezone": "^0.5.46",
+    "winston": "^3.17.0"
   }
 }
