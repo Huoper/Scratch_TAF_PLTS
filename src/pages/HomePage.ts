@@ -19,6 +19,10 @@ export default class HomePage {
         
         await this.page.getByTitle(this.contactLink).click();
         logger.info('Navigated to Contacts page');
+        
+        await expect(this.page.getByTitle(this.contactLink))
+        .toBeVisible({timeout: 5000})
+
         return new ContactPage(this.page);
     }
 }

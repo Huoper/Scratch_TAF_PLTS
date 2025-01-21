@@ -12,7 +12,7 @@ export default class ContactPage {
 
     async createContact(firstName: string, lastName: string): Promise<void> {
         logger.info('Creating a new contact');
-        await this.page.getByRole('button', {name: this.newButton}).click();
+        await this.page.getByRole('button', {name: this.newButton , exact: true}).click();
         logger.info('New button clicked');
         
         await this.page.getByPlaceholder('Search Accounts...').click();
