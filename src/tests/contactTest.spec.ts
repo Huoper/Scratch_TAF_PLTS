@@ -2,6 +2,7 @@ import {test} from "@playwright/test";
 import LoginPage from "../pages/LoginPage";
 import logger from "../utils/LoggerUtil";
 import users from "../data/userData.json";
+import {generateTestData, exportToJSON} from "../utils/FakerUtil";
 
 for (const user of users) {
     test(`Contact creation test for ${user.firstName} ${user.lastName}`,
@@ -18,3 +19,10 @@ for (const user of users) {
         logger.info('Contact creation test passed');
     });
 }
+
+// Generate test data using Faker
+test('Faker', async ({page}) => {
+    const testData = generateTestData(5);
+    exportToJSON(testData, 'fakerUserData.json');
+});
+

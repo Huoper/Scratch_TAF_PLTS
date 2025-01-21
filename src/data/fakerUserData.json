@@ -1,0 +1,37 @@
+[
+  {
+    "firstName": "Helmer",
+    "lastName": "Jacobs",
+    "email": "Kraig_Streich@yahoo.com",
+    "phone": "(572) 257-6042",
+    "address": "9920 Simonis Haven"
+  },
+  {
+    "firstName": "Roy",
+    "lastName": "Rippin",
+    "email": "Daija7@hotmail.com",
+    "phone": "953.437.2362 x259",
+    "address": "259 The Crescent"
+  },
+  {
+    "firstName": "Eugene",
+    "lastName": "Hilpert",
+    "email": "Kaitlin.Lemke@hotmail.com",
+    "phone": "674.578.8675 x511",
+    "address": "689 Talon Streets"
+  },
+  {
+    "firstName": "Parker",
+    "lastName": "Cronin",
+    "email": "Talon.Denesik@gmail.com",
+    "phone": "837.234.6939",
+    "address": "733 Devonshire Road"
+  },
+  {
+    "firstName": "Trevor",
+    "lastName": "Smitham",
+    "email": "Valerie5@gmail.com",
+    "phone": "239-821-3245 x52794",
+    "address": "791 W Monroe Street"
+  }
+]
