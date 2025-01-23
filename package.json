@@ -9,9 +9,17 @@
   "type": "commonjs",
   "description": "",
   "devDependencies": {
+    "@eslint/js": "^9.18.0",
     "@faker-js/faker": "^9.4.0",
     "@playwright/test": "^1.49.1",
-    "@types/node": "^22.10.7"
+    "@types/node": "^22.10.7",
+    "@typescript-eslint/eslint-plugin": "^8.21.0",
+    "@typescript-eslint/parser": "^8.21.0",
+    "eslint": "^9.18.0",
+    "eslint-plugin-playwright": "^2.1.0",
+    "globals": "^15.14.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.21.0"
   },
   "dependencies": {
     "dotenv": "^16.4.7",

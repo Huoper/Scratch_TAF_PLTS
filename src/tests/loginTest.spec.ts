@@ -1,8 +1,8 @@
-import {test} from "@playwright/test";
+import { test } from "@playwright/test";
 import LoginPage from "../pages/LoginPage";
 import logger from "../utils/LoggerUtil";
 
-test('Login Test', async ({page}) => {
+test('Login Test', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.navigateToLoginPage();
 
