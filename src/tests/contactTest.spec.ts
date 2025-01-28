@@ -11,10 +11,14 @@ for (const user of users) {
             await loginPage.navigateToLoginPage();
 
             const homePage = await loginPage.login(process.env.userid!, process.env.password!);
+            
             await homePage.verifyServiceTitle();
             logger.info('Login test passed');
+
             const contactPage = await homePage.navigateToContactPage();
+
             await contactPage.createContact(user.firstName!, user.lastName!);
+
             await contactPage.verifyContactCreated(user.firstName!, user.lastName!);
             logger.info('Contact creation test passed');
         });

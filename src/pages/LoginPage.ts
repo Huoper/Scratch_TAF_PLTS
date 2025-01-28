@@ -27,13 +27,16 @@ export default class LoginPage {
     }
 
     async clickLoginButton() {
-        await this.page.locator(this.loginButton).click().catch((error) => {
+        try {
+            await this.page.locator(this.loginButton).click();
+            logger.info('Clicked login button');
+        } catch (error) {
             logger.error('Error clicking login button: ', error);
             throw error;
-        }).then(() => {logger.info('Clicked login button')});
+        }
     }
 
-    async login(username: string, password: string) {
+    async login(username: string, password: string): Promise<HomePage> {
         await this.fillUsername(username);
         await this.fillPassword(password);
         await this.clickLoginButton();
